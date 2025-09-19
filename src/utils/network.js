@@ -1,6 +1,3 @@
-const API_ROOT = 'https://swapi-api.hbtn.io/api/';
-const API_PEOPLE = 'people';
-
 export const getApiResources = async (url) => {
     try {
         const res = await fetch(url);
@@ -19,10 +16,10 @@ export const getApiResources = async (url) => {
 }
 
 // Async functions
-(async () => {
-    const body = await getApiResources(API_ROOT + API_PEOPLE);
-    console.log(body)
-})();
+//(async () => {
+//    const body = await getApiResources(API_ROOT + API_PEOPLE);
+//    console.log(body)
+//})();
 
 // Promises
 // getApiResources(API_ROOT + API_PEOPLE)
