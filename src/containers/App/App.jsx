@@ -1,10 +1,10 @@
-import PeoplePage from '../PeoplePage';
+import CharactersPage from '../CharactersPage';
 
 import styles from './App.module.css';
 
 const App = () => {
   return (
-    <PeoplePage/>
+    <CharactersPage/>
   )
 }
 
