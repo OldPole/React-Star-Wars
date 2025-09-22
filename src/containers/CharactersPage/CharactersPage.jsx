@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getApiResources } from '../../utils/network';
-import { API_CHARACTERS } from '../../constants/api';
+import { API_ROOT, API_CHARACTERS } from '../../constants/api';
 
 import styles from './CharactersPage.module.css';
 
@@ -9,13 +9,16 @@ const CharactersPage = () => {
 
     const getResources = async (url) => {
         const res = await getApiResources(url);
-        console.log(res);
-        const charactersList = res.results.map(({name, url}) => {
+
+        const charactersList = res.map(({id, name}) => {
+            const url = API_ROOT + 'id/' + id + '.json';
             return {
                 name,
                 url
             }
         });
+
+        console.log(charactersList);
 
         setCharacters(charactersList);
     }

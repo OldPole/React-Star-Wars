@@ -1,4 +1,4 @@
-const SWAPI_ROOT = 'https://swapi-api.hbtn.io/api/';
-const SWAPI_PEOPLE = 'people';
+export const API_ROOT = 'https://akabab.github.io/starwars-api/api/';
+const API_ALL = 'all.json';
 
-export const API_CHARACTERS = SWAPI_ROOT + SWAPI_PEOPLE;
+export const API_CHARACTERS = API_ROOT + API_ALL;
