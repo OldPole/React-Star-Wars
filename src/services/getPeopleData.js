@@ -11,11 +11,8 @@ const getId = (url, category) => {
 
 export const getPeopleId = url => getId(url, SWAPI_PEOPLE);
 
-export const getPeopleImg = id => {
-    const url = AKABAB_ROOT + id + JSON;
-    console.log(url)
-    const res = getApiResources(url);
-    console.log(res)
-
-    return res.image;
+export const getPeopleImg = async (id) => {
+        const url = AKABAB_ROOT + id + JSON;
+        const res = await getApiResources(url);
+        return res && res.image;
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getApiResources } from '../../utils/network';
 import { getPeopleId, getPeopleImg } from '../../services/getPeopleData';
 import { API_PEOPLE } from '../../constants/api';
+import PeopleList from '../../components/PeoplePage/PeopleList'
 
 import styles from './PeoplePage.module.css';
 
@@ -11,18 +12,14 @@ const PeoplePage = () => {
     const getResources = async (url) => {
         const res = await getApiResources(url);
 
-        const peopleList = res.results.map(({name, url}) => {
+        const peoplePromises = res.results.map(async ({name, url}) => {
             const id = getPeopleId(url);
-            const image = getPeopleImg(id);
-            console.log(image);
-            return {
-                id,
-                name,
-                url
-            }
+            const image = await getPeopleImg(id);
+
+            return { id, name, image }
         });
 
-        console.log(peopleList);
+        const peopleList = await Promise.all(peoplePromises);
 
         setPeople(peopleList);
     }
@@ -33,13 +30,7 @@ const PeoplePage = () => {
 
     return (
         <>
-            { people && (
-                <ul>
-                    {people.map(({ name, url }) => 
-                        <li key={name}>{name}</li>
-                    )}
-                </ul>
-            )}
+            { people && <PeopleList people={people} />}
         </>
     )
 }
