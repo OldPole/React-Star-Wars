@@ -4,9 +4,11 @@ const PeopleList = ({ people }) => {
     return (
         <ul className={style.list__container}>
             {people.map(({ id, name, image }) => 
-                <li key={id}>
-                    <img src={image} alt={name} />
-                    <p>{name}</p>
+                <li className={style.list__item} key={id}>
+                    <a href="#">
+                        <img className={style.person__img} src={image} alt={name} />
+                        <p>{name}</p>
+                    </a>
                 </li>
             )}
         </ul>
