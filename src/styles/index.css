@@ -2,17 +2,19 @@
   --color-white: #fff;
   --color-black: #000;
   --color-dark: #10100e;
+  --color-yellow: #ffff00;
 
   --spacing-medium: 20px;
 
   --border-radius: 3px;
 
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-header: 26px;
+  --font-family-main: Arial, Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family);
+  font-family: var(--font-family-main);
   background-color: var(--color-dark);
 }
