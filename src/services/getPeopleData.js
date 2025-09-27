@@ -1,5 +1,8 @@
-import { SWAPI_ROOT, SWAPI_PEOPLE, AKABAB_ROOT, JSON, IMG_NOT_FOUND } from '../constants/api';
-import { getApiResources } from '../utils/network';
+import { getApiResources } from '@utils/network';
+import {
+    SWAPI_ROOT, SWAPI_PEOPLE, 
+    AKABAB_ROOT, JSON, IMG_NOT_FOUND 
+} from '@constants/api';
 
 const getId = (url, category) => {
     const id = url
