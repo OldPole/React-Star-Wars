@@ -3,13 +3,24 @@
   --color-black: #000;
   --color-dark: #10100e;
   --color-yellow: #ffff00;
+  --color-blue:   #6a83fb;
+	--color-violet: #ae72c2;
+
+  --text-shadow-yellow:
+    0 0 2px var(--color-white),
+    0 0 40px var(--color-blue);
 
   --spacing-medium: 20px;
+  --spacing-large: 30px;
 
   --border-radius: 3px;
 
   --font-size-header: 26px;
   --font-family-main: Arial, Helvetica, sans-serif;
+
+  --theme-default-header: #cccc46;
+
+  --transition: .4s;
 }
 
 body {
@@ -17,4 +28,12 @@ body {
   padding: 0;
   font-family: var(--font-family-main);
   background-color: var(--color-dark);
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  color: var(--theme-default-header);
+  text-shadow: 0 0 2px var(--color-black);
+  transition: color var(--transition);
 }

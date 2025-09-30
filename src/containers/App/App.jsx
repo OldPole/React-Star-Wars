@@ -1,22 +1,25 @@
-import PeoplePage from '@containers/PeoplePage';
-import HomePage from '@containers/HomePage';
+import { Routes, Route } from 'react-router-dom';
 
-import { NavLink, Routes, Route } from 'react-router-dom';
+import Header from '@components/Header';
+import routesConfig from '@routes/routesConfig';
 
 import styles from './App.module.css';
 
 const App = () => {
   return (
     <>
-      <NavLink to={'/'}>Home</NavLink>
-      <NavLink to={'/people'}>People</NavLink>
+      <Header/>
 
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/people' element={<PeoplePage/>}/>
+        {routesConfig.map((route, index) => (
+          <Route 
+            key={index} 
+            path={route.path} 
+            element={route.element}
+          />
+        ))}
       </Routes>
     </>
-
   )
 }
 
