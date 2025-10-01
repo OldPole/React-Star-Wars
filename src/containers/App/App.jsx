@@ -8,17 +8,19 @@ import styles from './App.module.css';
 const App = () => {
   return (
     <>
-      <Header/>
+      <div className={styles.wrapper}>
+        <Header/>
 
-      <Routes>
-        {routesConfig.map((route, index) => (
-          <Route 
-            key={index} 
-            path={route.path} 
-            element={route.element}
-          />
-        ))}
-      </Routes>
+        <Routes>
+          {routesConfig.map((route, index) => (
+            <Route 
+              key={index} 
+              path={route.path} 
+              element={route.element}
+            />
+          ))}
+        </Routes>
+      </div>
     </>
   )
 }

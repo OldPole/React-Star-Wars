@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
-import style from './PeopleList.module.css';
+import styles from './PeopleList.module.css';
 
 const PeopleList = ({ people }) => {
     return (
-        <ul className={style.list__container}>
+        <ul className={styles.list__container}>
             {people.map(({ id, name, image }) => 
-                <li className={style.list__item} key={id}>
+                <li className={styles.list__item} key={id}>
                     <a href="#">
-                        <img className={style.person__img} src={image} alt={name} />
+                        <img className={styles.person__img} src={image} alt={name} />
                         <p>{name}</p>
                     </a>
                 </li>

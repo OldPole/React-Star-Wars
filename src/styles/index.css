@@ -13,21 +13,35 @@
   --spacing-medium: 20px;
   --spacing-large: 30px;
 
+  --width-max: 1200px
+
   --border-radius: 3px;
 
+  --transition: .4s;
+
+  --font-size-main: 16px;
   --font-size-header: 26px;
   --font-family-main: Arial, Helvetica, sans-serif;
 
   --theme-default-header: #cccc46;
-
-  --transition: .4s;
+  --theme-default-bgimage: url(@static/bg.jpg);
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-size: var(--font-size-main);
   font-family: var(--font-family-main);
   background-color: var(--color-dark);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
 }
 
 .header__text {
