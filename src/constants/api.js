@@ -1,8 +1,9 @@
 // SWAPI
 export const SWAPI_ROOT = 'https://swapi-api.hbtn.io/api/';
 export const SWAPI_PEOPLE = 'people';
+export const SWAPI_PAGE_PARAM = '/?page=';
 
-export const API_PEOPLE = SWAPI_ROOT + SWAPI_PEOPLE;
+export const API_PEOPLE = SWAPI_ROOT + SWAPI_PEOPLE + SWAPI_PAGE_PARAM;
 
 // akabab API
 export const AKABAB_ROOT = 'https://akabab.github.io/starwars-api/api/id/';
