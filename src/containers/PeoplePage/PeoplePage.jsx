@@ -38,6 +38,7 @@ const PeoplePage = ({ setErrorApi }) => {
             setNextPage(res.next);
             setPrevPage(res.previous);
             setCurPage(getPeoplePageId(url));
+            
             setErrorApi(false);
         } else {
             setErrorApi(true);

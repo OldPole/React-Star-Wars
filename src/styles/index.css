@@ -14,12 +14,14 @@
     0 0 2px var(--color-white),
     0 0 40px var(--color-blue);
 
+  --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 30px;
 
   --width-max: 1200px;
 
   --border-radius: 3px;
+  --border-radius-medium: 5px;
 
   --transition: .4s;
 
