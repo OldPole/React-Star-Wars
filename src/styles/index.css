@@ -5,6 +5,7 @@
   --color-yellow: #ffff00;
   --color-blue:   #6a83fb;
 	--color-violet: #ae72c2;
+  --color-red:    #f75d83;
 
   --text-shadow-yellow:
     0 0 2px var(--color-white),
@@ -14,10 +15,12 @@
     0 0 2px var(--color-white),
     0 0 40px var(--color-blue);
 
+  --spacing-ultrasmall: 5px;
   --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 30px;
 
+  --margin-list: 7px;
   --width-max: 1200px;
 
   --border-radius: 3px;

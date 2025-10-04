@@ -1,0 +1,8 @@
+.loader {
+    width: 100px;
+    height:100px;
+    padding: 25px;
+}
+.shadow {
+    filter: drop-shadow(0 0 2px #000);
+}
