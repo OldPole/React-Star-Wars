@@ -58,7 +58,7 @@ const PersonPage = ({ setErrorApi }) => {
                 <span className={styles.person__name}>{personName}</span>
 
                 <div className={styles.container}>
-                    <PersonImg personImg={personImg} personName={personName}/>
+                    <PersonImg personId={id} personImg={personImg} personName={personName}/>
 
                     {personInfo && <PersonInfo personInfo={personInfo}/>}
 
