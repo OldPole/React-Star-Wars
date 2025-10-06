@@ -10,7 +10,7 @@ import { API_PEOPLE } from '@constants/api';
 import { useQueryParams } from '@hooks/useQueryParams';
 
 import styles from './PeoplePage.module.css';
-import { getPeoplePageId } from '../../services/getPeopleData';
+import { getPeoplePageId } from '@services/getPeopleData';
 
 const PeoplePage = ({ setErrorApi }) => {
     const [people, setPeople] = useState(null);
@@ -27,6 +27,7 @@ const PeoplePage = ({ setErrorApi }) => {
         if (res) {
             const peoplePromises = res.results.map(async ({name, url}) => {
                 const id = getPeopleId(url);
+                
                 const image = await getPeopleImg(id);
 
             return { id, name, image }
