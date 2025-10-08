@@ -21,7 +21,6 @@ const FavoritesPage = () => {
                     image: item[1].personImg
                 }
             })
-            console.log(res);
 
             setPeople(res);
         }
