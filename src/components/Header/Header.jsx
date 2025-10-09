@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { useTheme, THEME_LIGHT, THEME_DARK, THEME_NEITRAL } from "@context/ThemeProvider";
-import { NavLink } from "react-router"
+import { NavLink } from "react-router-dom";
 
 import Favorite from "@components/Favorite";
+import { useTheme, THEME_LIGHT, THEME_DARK, THEME_NEITRAL } from "@context/ThemeProvider";
 
-import imgDroid from './img/droid.svg';
 import imgLightsaber from './img/lightsaber.svg';
-import imgStation from './img/space-station.svg';
+import imgSpacestation from './img/space-station.svg';
+import imgDroid from './img/droid.svg'
 
 import styles from './Header.module.css';
 
@@ -16,9 +16,9 @@ const Header = () => {
     const {theme} = useTheme();
 
     useEffect(() => {
-        switch(theme) {
+        switch (theme) {
             case THEME_LIGHT: setIcon(imgLightsaber); break;
-            case THEME_DARK: setIcon(imgStation); break;
+            case THEME_DARK: setIcon(imgSpacestation); break;
             case THEME_NEITRAL: setIcon(imgDroid); break;
             default: setIcon(imgDroid);
         }
@@ -31,6 +31,7 @@ const Header = () => {
             <ul className={styles.container__list}>
                 <li><NavLink to={'/'}>Home</NavLink></li>
                 <li><NavLink to={'/people/?page=1'}>People</NavLink></li>
+                <li><NavLink to={'/search'}>Search</NavLink></li>
                 <li><NavLink to={'/not-found'}>Not Found</NavLink></li>
             </ul>
 

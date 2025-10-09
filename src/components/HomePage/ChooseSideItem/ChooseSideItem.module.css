@@ -1,0 +1,29 @@
+.item {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 450px;
+    margin-right: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-black);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.item:hover {
+    filter: saturate(1.1);
+}
+.item__title {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: var(--font-size-subheader);
+    text-align: center;
+}
+.item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: var(--border-radius);
+}

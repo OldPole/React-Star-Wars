@@ -1,15 +1,12 @@
-import { createContext, useContext, useState } from 'react';
-import { changeCssVariables } from '@services/changeCssVariables';
+import { createContext, useContext, useState } from "react";
 
-export const THEME_LIGHT = 'light';
-export const THEME_DARK = 'dark';
-export const THEME_NEITRAL = 'neitral';
+import { changeCssVariables } from "@services/changeCssVariables";
 
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children, ...props }) => {
     const [theme, setTheme] = useState(null);
-
+    
     const change = (name) => {
         setTheme(name);
         changeCssVariables(name);
@@ -30,4 +27,9 @@ const ThemeProvider = ({ children, ...props }) => {
 
 export default ThemeProvider;
 
+// Custom hook
 export const useTheme = () => useContext(ThemeContext);
+
+export const THEME_LIGHT = 'light';
+export const THEME_DARK = 'dark';
+export const THEME_NEITRAL = 'neitral';

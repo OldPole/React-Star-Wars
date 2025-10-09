@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 import { Provider } from 'react-redux';
-import ThemeProvider from '@context/ThemeProvider';
 
 import store from '@store/store';
+import ThemeProvider from '@context/ThemeProvider';
 
 import App from '@containers/App';
 
@@ -17,7 +17,7 @@ root.render(
             <Provider store={store}>
                 <ThemeProvider>
                     <App />
-                </ThemeProvider>    
+                </ThemeProvider>
             </Provider> 
         </React.StrictMode>
     </BrowserRouter>
