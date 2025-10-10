@@ -1,7 +1,7 @@
 import UiButton from "./UiButton"
 
 export default {
-    title: 'Ui-Kit/UiButtob',
+    title: 'Ui-Kit/UiButton',
     component: UiButton
 }
 
