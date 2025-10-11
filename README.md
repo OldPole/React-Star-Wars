@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# React Star Wars
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-19.1.1-blue?logo=react)](https://react.dev/)
+[![Redux](https://img.shields.io/badge/Redux-5.0.1-purple?logo=redux)](https://redux.js.org/)
+[![React Router](https://img.shields.io/badge/React_Router-7.9.3-orange?logo=reactrouter)](https://reactrouter.com/)
+[![Storybook](https://img.shields.io/badge/Storybook-9.1.10-ff69b4?logo=storybook)](https://storybook.js.org/)
 
-## Available Scripts
+Веб-приложение на React с использованием Star Wars API (SWAPI) для просмотра информации о вселенной Звездных Войн.
 
-In the project directory, you can run:
+## Скриншоты
 
-### `npm start`
+*Добавьте скриншоты вашего приложения здесь*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Возможности
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔍 **Просмотр персонажей** - список всех персонажей вселенной Star Wars
+- 🔎 **Динамический поиск персонажей** - быстрый поиск по имени персонажей
+- 📱 **Адаптивный дизайн** - корректное отображение на всех устройствах
+- ⚡ **Управление состоянием** - Redux Toolkit для эффективного state management
+- 🎨 **Компонентный подход** - Storybook для разработки и тестирования компонентов
 
-### `npm test`
+## Технологии
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- [**React 19.1.1**](https://react.dev/) - пользовательский интерфейс
+- [**Redux Toolkit 2.9.0**](https://redux-toolkit.js.org/) - управление состоянием
+- [**React Router 7.9.3**](https://reactrouter.com/) - навигация между страницами
+- [**React Redux 9.2.0**](https://react-redux.js.org/) - интеграция React с Redux
 
-### `npm run build`
+### Вспомогательные библиотеки
+- [**Lodash 4.17.21**](https://lodash.com/) - утилиты для работы с данными
+- [**Classnames 2.5.1**](https://www.npmjs.com/package/classnames) - условное объединение классов CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Инструменты разработки
+- [**Storybook 9.1.10**](https://storybook.js.org/) - разработка компонентов в изоляции
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Установка и запуск
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Предварительные требования
+- Node.js 16.0 или выше
+- npm или yarn
 
-### `npm run eject`
+### Установка
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Клонируйте репозиторий**
+```bash
+git clone https://github.com/OldPole/React-Star-Wars.git
+cd React-Star-Wars
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Установите зависимости**
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Запустите приложение в режиме разработки**
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Откройте браузер и перейдите по адресу**
+http://localhost:3000
 
-## Learn More
+### Дополнительные команды
+1. **Запуск Storybook для просмотра UI компонентов**
+```bash
+npm run storybook
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Сборка проекта для production**
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👤 Автор
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**OldPole**  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/OldPole)

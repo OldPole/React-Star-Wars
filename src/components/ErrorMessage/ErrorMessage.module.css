@@ -8,3 +8,10 @@
     text-align: center;
     text-shadow: 0 0 2px var(--color-white);
 }
+.video {
+    display: block;
+    margin: auto;
+    margin-top: var(--spacing-large);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow-white);
+}
