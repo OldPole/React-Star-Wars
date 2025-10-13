@@ -12,4 +12,5 @@ export const API_SEARCH = SWAPI_ROOT + SWAPI_PEOPLE + SWAPI_SEARCH_PARAM;
 export const AKABAB_ROOT = 'https://akabab.github.io/starwars-api/api/id/';
 export const JSON = '.json';
 
-export const IMG_NOT_FOUND = 'https://vignette.wikia.nocookie.net/starwars/images/6/60/WedgeHelmetless-ROTJHD.jpg';
+export const IMG_NOT_FOUND =
+  'https://vignette.wikia.nocookie.net/starwars/images/6/60/WedgeHelmetless-ROTJHD.jpg';

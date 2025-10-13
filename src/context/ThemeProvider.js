@@ -1,29 +1,28 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
-import { changeCssVariables } from "@services/changeCssVariables";
+import { changeCssVariables } from '@services/changeCssVariables';
 
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children, ...props }) => {
-    const [theme, setTheme] = useState(null);
-    
-    const change = (name) => {
-        setTheme(name);
-        changeCssVariables(name);
-    }
+  const [theme, setTheme] = useState(null);
 
-    return (
-        <ThemeContext.Provider
-            value={{
-                theme,
-                change
-            }}
-            {...props}
-        >
-            {children}
-        </ThemeContext.Provider>
-    )
-}
+  const change = (name) => {
+    setTheme(name);
+    changeCssVariables(name);
+  };
+
+  return (
+    <ThemeContext.Provider
+      value={{
+        theme,
+        change,
+      }}
+      {...props}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
 
 export default ThemeProvider;
 

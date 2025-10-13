@@ -1,6 +1,7 @@
 {
   "name": "react-star-wars",
   "version": "0.1.0",
+  "homepage": "https://OldPole.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
@@ -15,11 +16,13 @@
     "redux": "^5.0.1"
   },
   "scripts": {
+    "deploy": "npm run build && npm run build-storybook && npm run build-gh-pages",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o ./build/storybook",
+    "build-gh-pages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
     "@storybook/preset-create-react-app": "^9.1.10",
     "@storybook/react-webpack5": "^9.1.10",
     "eslint-plugin-storybook": "^9.1.10",
+    "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",

@@ -13,58 +13,58 @@ import styles from './PeoplePage.module.css';
 import { getPeoplePageId } from '@services/getPeopleData';
 
 const PeoplePage = ({ setErrorApi }) => {
-    const [people, setPeople] = useState(null);
-    const [nextPage, setNextPage] = useState(null);
-    const [prevPage, setPrevPage] = useState(null);
-    const [curPage, setCurPage] = useState(1);
+  const [people, setPeople] = useState(null);
+  const [nextPage, setNextPage] = useState(null);
+  const [prevPage, setPrevPage] = useState(null);
+  const [curPage, setCurPage] = useState(1);
 
-    const query = useQueryParams();
-    const queryPage = query.get('page');
+  const query = useQueryParams();
+  const queryPage = query.get('page');
 
-    const getResources = async (url) => {
-        const res = await getApiResources(url);
+  const getResources = async (url) => {
+    const res = await getApiResources(url);
 
-        if (res) {
-            const peoplePromises = res.results.map(async ({name, url}) => {
-                const id = getPeopleId(url);
-                
-                const image = await getPeopleImg(id);
+    if (res) {
+      const peoplePromises = res.results.map(async ({ name, url }) => {
+        const id = getPeopleId(url);
 
-            return { id, name, image }
-            });
+        const image = await getPeopleImg(id);
 
-            const peopleList = await Promise.all(peoplePromises);
+        return { id, name, image };
+      });
 
-            setPeople(peopleList);
-            setNextPage(res.next);
-            setPrevPage(res.previous);
-            setCurPage(getPeoplePageId(url));
-            
-            setErrorApi(false);
-        } else {
-            setErrorApi(true);
-        }
+      const peopleList = await Promise.all(peoplePromises);
+
+      setPeople(peopleList);
+      setNextPage(res.next);
+      setPrevPage(res.previous);
+      setCurPage(getPeoplePageId(url));
+
+      setErrorApi(false);
+    } else {
+      setErrorApi(true);
     }
+  };
 
-    useEffect(() => {
-        getResources(API_PEOPLE + queryPage);
-    }, []);
+  useEffect(() => {
+    getResources(API_PEOPLE + queryPage);
+  }, []);
 
-    return (
-        <>
-            <PeopleNavigation
-                getResources={getResources}
-                nextPage={nextPage}
-                prevPage={prevPage}
-                curPage={curPage}
-            />
-            { people && <PeopleList people={people} />}
-        </>
-    )
-}
+  return (
+    <>
+      <PeopleNavigation
+        getResources={getResources}
+        nextPage={nextPage}
+        prevPage={prevPage}
+        curPage={curPage}
+      />
+      {people && <PeopleList people={people} />}
+    </>
+  );
+};
 
 PeoplePage.propTypes = {
-    setErrorApi: PropTypes.func
-}
+  setErrorApi: PropTypes.func,
+};
 
 export default withErrorApi(PeoplePage);

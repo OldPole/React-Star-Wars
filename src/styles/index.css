@@ -3,27 +3,19 @@
   --color-black: #000;
   --color-dark: #10100e;
   --color-yellow: #ffff00;
-  --color-blue:   #6a83fb;
-	--color-violet: #ae72c2;
-  --color-red:    #f75d83;
+  --color-blue: #6a83fb;
+  --color-violet: #ae72c2;
+  --color-red: #f75d83;
 
-  --text-shadow-yellow:
-    0 0 2px var(--color-white),
-    0 0 40px var(--color-yellow);
+  --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
 
-  --text-shadow-blue:
-    0 0 2px var(--color-white),
-    0 0 40px var(--color-blue);
-  
-  --box-shadow-white:
-      0 16px 24px 2px rgba(255, 255, 255, 0.02), 
-      0 6px 30px 5px rgba(255, 255, 255, 0.04), 
-      0 8px 10px -5px rgba(255, 255, 255, 0.1);
-    
-  --box-shadow-black:
-      0 16px 24px 2px rgba(0, 0, 0, 0.5), 
-      0 6px 30px 5px rgba(0, 0, 0, 0.1), 
-      0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+
+  --box-shadow-white: 0 16px 24px 2px rgba(255, 255, 255, 0.02),
+    0 6px 30px 5px rgba(255, 255, 255, 0.04), 0 8px 10px -5px rgba(255, 255, 255, 0.1);
+
+  --box-shadow-black: 0 16px 24px 2px rgba(0, 0, 0, 0.5), 0 6px 30px 5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
   --spacing-ultrasmall: 5px;
   --spacing-small: 10px;
@@ -36,7 +28,7 @@
   --border-radius: 3px;
   --border-radius-medium: 5px;
 
-  --transition: .4s;
+  --transition: 0.4s;
 
   --font-size-main: 16px;
   --font-size-subheader: 18px;
@@ -48,13 +40,29 @@
   --theme-neitral-header: #cccc46;
   --theme-default-header: var(--theme-neitral-header);
 
-  --theme-light-bgimage:   linear-gradient(to right bottom, #051937, #162454, #312d70, #533389, #7a359f);
-  --theme-dark-bgimage:    linear-gradient(to right bottom, #000000, #160b11, #20141e, #281b2e, #2b2440);
-	--theme-neitral-bgimage: url(@static/bg.jpg);
+  --theme-light-bgimage: linear-gradient(
+    to right bottom,
+    #051937,
+    #162454,
+    #312d70,
+    #533389,
+    #7a359f
+  );
+  --theme-dark-bgimage: linear-gradient(
+    to right bottom,
+    #000000,
+    #160b11,
+    #20141e,
+    #281b2e,
+    #2b2440
+  );
+  --theme-neitral-bgimage: url(@static/bg.jpg);
   --theme-default-bgimage: var(--theme-neitral-bgimage);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -86,7 +94,7 @@ img {
 /* SCROLLS (Firefox and other browsers) */
 
 * {
-  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, .7);
+  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, 0.7);
   scrollbar-width: thin;
 }
 
@@ -99,8 +107,8 @@ img {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 ::-webkit-scrollbar-corner {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }

@@ -16,6 +16,6 @@ module.exports = function override(config, env) {
     '@store': 'src/store',
     '@context': 'src/context',
   })(config);
-  
+
   return config;
 };

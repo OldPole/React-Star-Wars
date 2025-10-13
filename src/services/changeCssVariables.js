@@ -7,14 +7,11 @@
 */
 
 export const changeCssVariables = (theme) => {
-    const root = document.querySelector(':root');
+  const root = document.querySelector(':root');
 
-    const vars = ['header', 'bgimage'];
+  const vars = ['header', 'bgimage'];
 
-    vars.forEach(element => {
-        root.style.setProperty(
-            `--theme-default-${element}`, 
-            `var(--theme-${theme}-${element})`
-        )
-    })
-}
+  vars.forEach((element) => {
+    root.style.setProperty(`--theme-default-${element}`, `var(--theme-${theme}-${element})`);
+  });
+};
