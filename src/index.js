@@ -10,7 +10,7 @@ import '@styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-//for deploy add basename={/React-Star-Wars/} to BrowserRouter and to homepage in package.json
+//for deploy add basename={'/React-Star-Wars/'} to BrowserRouter and to homepage in package.json
 
 root.render(
   <React.StrictMode>

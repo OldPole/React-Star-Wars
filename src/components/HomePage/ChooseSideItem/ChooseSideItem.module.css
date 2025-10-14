@@ -27,3 +27,9 @@
   object-position: center center;
   border-radius: var(--border-radius);
 }
+
+@media screen and (max-width: 900px) {
+  .item {
+    margin-right: 0;
+  }
+}
