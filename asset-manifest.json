@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Star-Wars/static/css/main.b32758bb.css",
-    "main.js": "/React-Star-Wars/static/js/main.6a1cd5a9.js",
+    "main.js": "/React-Star-Wars/static/js/main.28310d5d.js",
     "static/css/152.7dcc1055.chunk.css": "/React-Star-Wars/static/css/152.7dcc1055.chunk.css",
     "static/js/152.9edc78ea.chunk.js": "/React-Star-Wars/static/js/152.9edc78ea.chunk.js",
     "static/media/bg.jpg": "/React-Star-Wars/static/media/bg.29b25be31315dad3ce4e.jpg",
@@ -23,12 +23,12 @@
     "static/media/loader-white.svg": "/React-Star-Wars/static/media/loader-white.39ba74ef2e9a266d53e2afd6601c9b82.svg",
     "index.html": "/React-Star-Wars/index.html",
     "main.b32758bb.css.map": "/React-Star-Wars/static/css/main.b32758bb.css.map",
-    "main.6a1cd5a9.js.map": "/React-Star-Wars/static/js/main.6a1cd5a9.js.map",
+    "main.28310d5d.js.map": "/React-Star-Wars/static/js/main.28310d5d.js.map",
     "152.7dcc1055.chunk.css.map": "/React-Star-Wars/static/css/152.7dcc1055.chunk.css.map",
     "152.9edc78ea.chunk.js.map": "/React-Star-Wars/static/js/152.9edc78ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b32758bb.css",
-    "static/js/main.6a1cd5a9.js"
+    "static/js/main.28310d5d.js"
   ]
 }
