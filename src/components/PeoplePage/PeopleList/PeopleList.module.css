@@ -24,3 +24,9 @@
   object-position: top center;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
+
+@media screen and (max-width: 750px) {
+  .list__container {
+    justify-content: center;
+  }
+}

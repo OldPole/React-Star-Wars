@@ -35,3 +35,11 @@
 .item__neitral:hover {
   box-shadow: 0 0 7px 2px var(--color-shadow-neitral);
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
