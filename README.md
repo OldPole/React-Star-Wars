@@ -1,4 +1,4 @@
-# 🪐 Star Wars Application
+# Star Wars Application
 
 [![React](https://img.shields.io/badge/React-19.1.1-blue?logo=react)](https://react.dev/)
 [![Redux](https://img.shields.io/badge/Redux-5.0.1-purple?logo=redux)](https://redux.js.org/)
@@ -9,7 +9,7 @@ A React web application using the Star Wars API (SWAPI) to view information abou
 
 ---
 
-## 🐧 Links
+## Links
 
 - `Project` https://oldpole.github.io/React-Star-Wars/
 - `Repository` https://github.com/OldPole/React-Star-Wars
@@ -18,7 +18,7 @@ A React web application using the Star Wars API (SWAPI) to view information abou
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - [React](https://react.dev/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -31,7 +31,7 @@ A React web application using the Star Wars API (SWAPI) to view information abou
 
 ---
 
-## 🐶 Available Scripts and Commands
+## Available Scripts and Commands
 
 ```bash
 # Install
@@ -60,7 +60,7 @@ npm run deploy-storybook # storybook deploy
 
 ---
 
-## 🦄 API
+## API
 
 - https://swapi-api.hbtn.io/ (main API)
 - https://akabab.github.io/starwars-api (images for API)
